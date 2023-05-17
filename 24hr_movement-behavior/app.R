@@ -8,50 +8,50 @@ ui <- fluidPage(
   
   sidebarLayout(
     sidebarPanel(width = 8,
-      splitLayout(
-        # Column 1
-        column(
-          width = 8,
-          h4("Razmisli o jednom svom", br(), "školskom danu!"),
-          img(src = "clock.png", width = 95, height = 95),
-          br(),
-          sliderInput("spavanje", 
-                      HTML("Koliko dugo spavaš (razmisli o danu kada ideš u školu ujutro)"),
-                      min = 5, max = 12, value = 8, step = 0.5),
-          br(), hr(), br(), br(), br(), br(), br(), br(),
-          sliderInput("aktivnost",
-                      HTML("Koliko ukupno vremena provedeš u tjelesnim aktivnostima od<br>kojih se umoriš, oznojiš, brže dišeš i srce ti brže kuca?"),
-                      min = 0, max = 4, value = 1, step = 0.25),
-          br(), hr(), br(), br(), br(), br(), br(),
-          sliderInput("sedentarno",
-                      HTML("Koliko vremena u jednom danu se zabavljaš sa mobitelom,<br>računalom ili gledanjem televizije? (korištenje računala<br>u školi ili za zadaću se ne broji)"),
-                      min = 0, max = 8, value = 1, step = 0.25),
-          br(), br(), br(), hr(), br(), br(),
-          h4("Sad razmisli o jednom uobičajenom", br(),"tjednu!"),
-          img(src = "week.png", width = 60, height = 60),
-          br(), br(),
-          sliderInput("jakost",
-                      HTML("Koliko dana radiš vježbe koje jačaju kosti i mišiće (trčanje,<br>skakanje, penjanje, utezi)"),
-                      min = 0, max = 7, value = 0)
-        ),
-        
-        # Column 2
-        column(
-          width = 6,
-          p("Trebaš spavati barem 9–11 sati (5-13 god.)", br(),"8–10 sati (14-17 god.) tijekom noći."),
-          img(src = "sleeping.png", width = 250, height = 250, align = "center"),
-          hr(),
-          p("Potrudi se kretati najmanje 1 sat svaki dan, odnosno baviti", br(),"tjelesnim aktivnostima umjerenog do visokog intenziteta (aktivnosti", br(),"u kojima se zadišeš i bar malo oznojiš)."),
-          img(src = "activities.png", width = 250, align = "center"),
-          hr(),
-          p("Ograniči vrijeme koje provodiš pred ekranima (npr., pred TV-om,", br(),"računalom, tabletom ili mobitelom) izvan škole na maksimalno", br(),"2 sata dnevno."),
-          img(src = "phone.png", width = 250, align = "center"),
-          hr(),
-          p("Trči, skači i vježbaj mišiće barem 3 puta tjedno."),
-          img(src = "strong.png", width = 200, height = 200, align = "left"),
-          img(src = "activities.png", width = 200, align = "right")
-          )
-      )
+                 splitLayout(
+                   # Column 1
+                   column(
+                     width = 8,
+                     h4("Razmisli o jednom svom", br(), "školskom danu!"),
+                     img(src = "clock.png", width = 95, height = 95),
+                     br(),
+                     sliderInput("spavanje", 
+                                 HTML("Koliko dugo spavaš (razmisli o danu kada ideš u školu ujutro)"),
+                                 min = 5, max = 12, value = 8, step = 0.5),
+                     br(), hr(), br(), br(), br(), br(), br(), br(),
+                     sliderInput("aktivnost",
+                                 HTML("Koliko ukupno vremena provedeš u tjelesnim aktivnostima od<br>kojih se umoriš, oznojiš, brže dišeš i srce ti brže kuca?"),
+                                 min = 0, max = 4, value = 1, step = 0.25),
+                     br(), hr(), br(), br(), br(), br(), br(),
+                     sliderInput("sedentarno",
+                                 HTML("Koliko vremena u jednom danu se zabavljaš sa mobitelom,<br>računalom ili gledanjem televizije? (korištenje računala<br>u školi ili za zadaću se ne broji)"),
+                                 min = 0, max = 8, value = 1, step = 0.25),
+                     br(), br(), br(), hr(), br(), br(),
+                     h4("Sad razmisli o jednom uobičajenom", br(),"tjednu!"),
+                     img(src = "week.png", width = 60, height = 60),
+                     br(), br(),
+                     sliderInput("jakost",
+                                 HTML("Koliko dana radiš vježbe koje jačaju kosti i mišiće (trčanje,<br>skakanje, penjanje, utezi)"),
+                                 min = 0, max = 7, value = 0)
+                   ),
+                   
+                   # Column 2
+                   column(
+                     width = 6,
+                     p("Trebaš spavati barem 9–11 sati (5-13 god.)", br(),"8–10 sati (14-17 god.) tijekom noći."),
+                     img(src = "sleeping.png", width = 250, height = 250, align = "center"),
+                     hr(),
+                     p("Potrudi se kretati najmanje 1 sat svaki dan, odnosno baviti", br(),"tjelesnim aktivnostima umjerenog do visokog intenziteta (aktivnosti", br(),"u kojima se zadišeš i bar malo oznojiš)."),
+                     img(src = "activities.png", width = 250, align = "center"),
+                     hr(),
+                     p("Ograniči vrijeme koje provodiš pred ekranima (npr., pred TV-om,", br(),"računalom, tabletom ili mobitelom) izvan škole na maksimalno", br(),"2 sata dnevno."),
+                     img(src = "phone.png", width = 250, align = "center"),
+                     hr(),
+                     p("Trči, skači i vježbaj mišiće barem 3 puta tjedno."),
+                     img(src = "strong.png", width = 200, height = 200, align = "left"),
+                     img(src = "activities.png", width = 200, align = "right")
+                   )
+                 )
     ),
     
     mainPanel(width = 4,
