@@ -16,7 +16,7 @@ ui <- fluidPage(
                      img(src = "clock.png", width = 95, height = 95),
                      br(),
                      sliderInput("spavanje", 
-                                 HTML("Koliko dugo spavaš (razmisli o danu kada ideš u školu ujutro)"),
+                                 HTML("Koliko dugo spavaš (razmisli o danu kada ideš u školu ujutro)?"),
                                  min = 5, max = 12, value = 8, step = 0.5),
                      br(), hr(), br(), br(), br(), br(), br(), br(),
                      sliderInput("aktivnost",
@@ -31,7 +31,7 @@ ui <- fluidPage(
                      img(src = "week.png", width = 60, height = 60),
                      br(), br(),
                      sliderInput("jakost",
-                                 HTML("Koliko dana radiš vježbe koje jačaju kosti i mišiće (trčanje,<br>skakanje, penjanje, utezi)"),
+                                 HTML("Koliko dana radiš vježbe koje jačaju kosti i mišiće (trčanje,<br>skakanje, penjanje, utezi)?"),
                                  min = 0, max = 7, value = 0)
                    ),
                    
