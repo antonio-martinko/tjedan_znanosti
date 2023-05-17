@@ -48,7 +48,7 @@ ui <- fluidPage(
                      img(src = "phone.png", width = 250, align = "center"),
                      hr(),
                      p("Trči, skači i vježbaj mišiće barem 3 puta tjedno."),
-                     img(src = "strong.png", width = 200, height = 200, align = "left"),
+                     img(src = "strong.png", width = 250, align = "left"),
                      img(src = "activities.png", width = 200, align = "right")
                    )
                  )
@@ -81,7 +81,7 @@ server <- function(input, output) {
       geom_bar(stat = "identity", fill = "cornflowerblue", alpha = 0.5) +
       geom_hline(yintercept = 1, color = "chartreuse3", linewidth = 1.5) +
       xlab("Tjelesna aktivnost") +
-      scale_y_continuous(breaks = seq(0, 8, by = 2), limits = c(0, 8)) +
+      scale_y_continuous(breaks = seq(0, 8, by = 1), limits = c(0, 8)) +
       ylab("Trajanje u satima") +
       theme_bw()
   })
@@ -91,7 +91,7 @@ server <- function(input, output) {
       geom_bar(stat = "identity", fill = "darkolivegreen3", alpha = 0.5) +
       geom_hline(yintercept = 2, color = "red", linewidth = 1.5) +
       xlab("Sedentarno ponašanje") +
-      scale_y_continuous(breaks = seq(0, 8, by = 2), limits = c(0, 8)) +
+      scale_y_continuous(breaks = seq(0, 8, by = 1), limits = c(0, 8)) +
       ylab("Trajanje u satima") +
       theme_bw()
   })
