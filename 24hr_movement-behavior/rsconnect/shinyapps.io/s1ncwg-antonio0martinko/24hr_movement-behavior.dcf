@@ -5,9 +5,9 @@ account: s1ncwg-antonio0martinko
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 9121783
-bundleId: 7225406
+bundleId: 7230404
 url: https://s1ncwg-antonio0martinko.shinyapps.io/24hr_movement-behavior/
-when: 1684255143.26534
-lastSyncTime: 1684255143.26536
+when: 1684346495.70359
+lastSyncTime: 1684346495.7036
 asMultiple: FALSE
 asStatic: FALSE
